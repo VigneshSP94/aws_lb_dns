@@ -3,8 +3,8 @@ package configs
 import "time"
 
 type Options struct {
-	Az       string
-	Interval time.Duration
 	Zone     string
+	Interval time.Duration
+	Region   string
 	Tag      string
 }
