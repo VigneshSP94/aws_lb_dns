@@ -52,6 +52,7 @@ func (a *AWSService) GetZoneID(zoneName string) string {
 	}
 	for _, zone := range result.HostedZones {
 		if *zone.Name == zoneName {
+			println(*zone.Id)
 			return *zone.Id
 		}
 	}
