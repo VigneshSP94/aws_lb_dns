@@ -8,3 +8,8 @@ type Options struct {
 	Region   string
 	Tag      string
 }
+
+type Alias struct {
+	CNAME string
+	Alias string
+}
